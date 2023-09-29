@@ -20,8 +20,8 @@
     echo nice; 
 
     echo "<br>";
-    echo "This is integer with operations: ";
-    $a =  $intvar + 1;
+    echo "This is integer with operation:(integer + constant) ";
+    $a =  $intvar + nice;
     echo $a;
 
     echo "<br>";
