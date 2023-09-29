@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>
     <?php
     $intvar =  420;
     echo "This is integer: ";
@@ -37,6 +37,6 @@
         echo "Not nice.\n";
     }
     ?>
-
+    </h1>
 </body>
 </html>
