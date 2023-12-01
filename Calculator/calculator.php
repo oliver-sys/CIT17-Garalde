@@ -14,26 +14,23 @@
     
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Retrieve values from the form
+        
         $number1 = $_POST['number1'];
         $number2 = $_POST['number2'];
     
-        // Check if the values are numeric
+        
         if (is_numeric($number1) && is_numeric($number2)) {
-            // Perform basic calculations
             $sum = $number1 + $number2;
             $difference = $number1 - $number2;
             $product = $number1 * $number2;
             $quotient = ($number2 != 0) ? $number1 / $number2 : "Cannot divide by zero";
     
-            // Display the results
             echo "<h2>Results:</h2>";
             echo "Sum: $sum<br>";
             echo "Difference: $difference<br>";
             echo "Product: $product<br>";
             echo "Quotient: $quotient";
         } else {
-            // Display an error message if inputs are not numeric
             echo "<p>Please enter valid numeric values for Number 1 and Number 2.</p>";
         }
     }
