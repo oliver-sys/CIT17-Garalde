@@ -65,9 +65,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </form>
 
 
-<a href="PHPScriptDemo.php">
-    <button style="position: fixed; bottom: 20px; left: 20px;">Show Data</button>
-</a>
+<footer>
+    <button onclick="location.href='PHPScriptDemo.php'" style="position: fixed; bottom: 20px; left: 20px;">Show Data</button>
+</footer>
 
 </body>
 </html>

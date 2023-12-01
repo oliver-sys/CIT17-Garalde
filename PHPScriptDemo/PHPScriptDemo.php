@@ -15,10 +15,8 @@ $username = "root";
 $password = "";
 $dbname = "PHPScriptDemo";
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -111,7 +109,7 @@ $conn->close();
 ?>
 
 <footer>
-    <button onclick="location.href='AddData.php'" style="position: fixed; bottom: 20px; left: 20px;">Add Data</button>
+    <button onclick="location.href='AddData.php'" style="position: fixed; bottom: 20px; center: 20px;">Add Data</button>
 </footer>
 
 </body>

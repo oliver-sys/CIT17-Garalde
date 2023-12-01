@@ -9,28 +9,23 @@ body {
     background-color: #333333; 
 }
 
-footer {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-}
-
-button {
+footer button {
+    font-family: 'Times New Roman', serif;
     background-color: black;
     color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+    font-size: 30px;
     transition: background-color 0.3s, color 0.3s;
+    width: 160px; 
+    height: 40px; 
+    box-sizing: border-box; 
 }
 
-button:hover {
+footer button:hover {
     background-color: gray;
     color: white;
 }
 
-button:active {
+footer button:active {
     background-color: darkgray;
     color: white;
 }
