@@ -8,10 +8,7 @@
 </head>
 <body>
 
-
 <?php
-echo "hotdog talga";
-
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -29,10 +26,11 @@ $result = $conn->query($sql);
 echo "STUDENTS LIST: <br>";
 if ($result) {
     echo "<table border='1'>";
-    echo "<tr><th>Name</th><th>Birthdate</th><th>Email</th></tr>";
+    echo "<tr><th>Student ID</th><th>Name</th><th>Birthdate</th><th>Email</th></tr>";
 
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
+        echo "<td>" . $row["StudentID"] . "</td>";
         echo "<td>" . $row["LastName"] . ", " . $row["FirstName"] . "</td>";
         echo "<td>" . $row["DateOfBirth"] . "</td>";
         echo "<td>" . $row["Email"] . "</td>";
@@ -50,10 +48,11 @@ $result = $conn->query($sql);
 echo "INSTRUCTORS LIST: <br>";
 if ($result) {
     echo "<table border='1'>";
-    echo "<tr><th>Name</th><th>Email</th></tr>";
+    echo "<tr><th>InstructorID</th><th>Name</th><th>Email</th></tr>";
 
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
+        echo "<td>" . $row["InstructorID"] . "</td>";
         echo "<td>" . $row["LastName"] . ", " . $row["FirstName"] . "</td>";
         echo "<td>" . $row["Email"] . "</td>";
         echo "</tr>";
@@ -70,10 +69,11 @@ $result = $conn->query($sql);
 echo "COURSES LIST: <br>";
 if ($result) {
     echo "<table border='1'>";
-    echo "<tr><th>Course</th><th>Credits</th></tr>";
+    echo "<tr><th>CourseID</th><th>Course</th><th>Credits</th></tr>";
 
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
+        echo "<td>" . $row["CourseID"] . "</td>";
         echo "<td>" . $row["CourseName"] . "</td>";
         echo "<td>" . $row["Credits"] . "</td>";
         echo "</tr>";
@@ -111,7 +111,10 @@ $conn->close();
 ?>
 
 <footer>
-    <button onclick="location.href='AddData.php'" style="position: fixed; top: 20px; right: 20px;">Add Data</button>
+    <button onclick="location.href='DeleteData.php'" style="position: fixed; bottom: 20px; right: 20px;">Delete Data</button>
+    <button onclick="location.href='UpdateData.php'" style="position: fixed; bottom: 20px; right: 190px;">Update Data</button>
+    <button onclick="location.href='AddData.php'" style="position: fixed; bottom: 20px; right: 360px;">Add Data</button>
+    <button onclick="location.href='PHPScriptDemo.php'" style="position: fixed; bottom: 20px; right: 530px;">Show Data</button>
 </footer>
 
 </body>
