@@ -10,6 +10,8 @@
 
 
 <?php
+echo "hotdog talga";
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -109,7 +111,7 @@ $conn->close();
 ?>
 
 <footer>
-    <button onclick="location.href='AddData.php'" style="position: fixed; bottom: 20px; center: 20px;">Add Data</button>
+    <button onclick="location.href='AddData.php'" style="position: fixed; top: 20px; right: 20px;">Add Data</button>
 </footer>
 
 </body>

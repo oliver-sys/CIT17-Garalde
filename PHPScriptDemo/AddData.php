@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 <footer>
-    <button onclick="location.href='PHPScriptDemo.php'" style="position: fixed; bottom: 20px; left: 20px;">Show Data</button>
+    <button onclick="location.href='PHPScriptDemo.php'" style="position: fixed; top: 20px; right: 20px;">Show Data</button>
 </footer>
 
 </body>
