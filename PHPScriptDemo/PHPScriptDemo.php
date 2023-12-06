@@ -48,7 +48,7 @@ $result = $conn->query($sql);
 echo "INSTRUCTORS LIST: <br>";
 if ($result) {
     echo "<table border='1'>";
-    echo "<tr><th>InstructorID</th><th>Name</th><th>Email</th></tr>";
+    echo "<tr><th>Instructor ID</th><th>Name</th><th>Email</th></tr>";
 
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
@@ -69,7 +69,7 @@ $result = $conn->query($sql);
 echo "COURSES LIST: <br>";
 if ($result) {
     echo "<table border='1'>";
-    echo "<tr><th>CourseID</th><th>Course</th><th>Credits</th></tr>";
+    echo "<tr><th>Course ID</th><th>Course</th><th>Credits</th></tr>";
 
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
