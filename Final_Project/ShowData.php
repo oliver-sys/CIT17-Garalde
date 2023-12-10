@@ -114,7 +114,7 @@ $conn->close();
     <button onclick="location.href='DeleteData.php'" style="position: fixed; bottom: 20px; right: 20px;">Delete Data</button>
     <button onclick="location.href='UpdateData.php'" style="position: fixed; bottom: 20px; right: 190px;">Update Data</button>
     <button onclick="location.href='AddData.php'" style="position: fixed; bottom: 20px; right: 360px;">Add Data</button>
-    <button onclick="location.href='PHPScriptDemo.php'" style="position: fixed; bottom: 20px; right: 530px;">Show Data</button>
+    <button onclick="location.href='ShowData.php'" style="position: fixed; bottom: 20px; right: 530px;">Show Data</button>
 </footer>
 
 </body>
