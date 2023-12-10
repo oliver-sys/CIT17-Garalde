@@ -8,9 +8,6 @@
 </head>
 <body>
 
-
-
-<!-- Update Student Form -->
 <form id="form1" method="post">
     <label for="studentID">Student ID:</label>
     <input type="number" id="studentID" name="studentID" required><br>
@@ -33,7 +30,6 @@
     <input type="submit" name="updateStudentSubmit" value="Update Student">
 </form>
 
-<!-- Update Instructor Form -->
 <form id="form2" method="post">
     <label for="instructorID">Instructor ID:</label>
     <input type="number" id="instructorID" name="instructorID" required><br>
@@ -53,7 +49,6 @@
     <input type="submit" name="updateInstructorSubmit" value="Update Instructor">
 </form>
 
-<!-- Update Course Form -->
 <form id="form3" method="post">
     <label for="courseID">Course ID:</label>
     <input type="number" id="courseID" name="courseID" required><br>
@@ -67,7 +62,6 @@
     <input type="submit" name="updateCourseSubmit" value="Update Course">
 </form>
 
-<!-- Update Enrollment Form -->
 <form id="form4" method="post">
     <label for="enrollmentID">Enrollment ID:</label>
     <input type="number" id="enrollmentID" name="enrollmentID" required><br>
@@ -99,7 +93,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Update Student
     if (isset($_POST["updateStudentSubmit"])) {
         $studentID = $_POST["studentID"];
         $newFirstName = $_POST["newFirstName"];
@@ -121,7 +114,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->close();
     }
 
-    // Update Instructor
     if (isset($_POST["updateInstructorSubmit"])) {
         $instructorID = $_POST["instructorID"];
         $newFirstName = $_POST["newFirstName"];
@@ -142,7 +134,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->close();
     }
 
-    // Update Course
     if (isset($_POST["updateCourseSubmit"])) {
         $courseID = $_POST["courseID"];
         $newCourseName = $_POST["newCourseName"];
@@ -161,7 +152,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->close();
     }
 
-    // Update Enrollment
     if (isset($_POST["updateEnrollmentSubmit"])) {
         $enrollmentID = $_POST["enrollmentID"];
         $newStudentID = $_POST["newStudentID"];
